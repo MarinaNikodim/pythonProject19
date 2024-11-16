@@ -26,7 +26,7 @@ def max_num(int_list):
 
 
 print(apply_all_func([6, 20, 15, 9], min_num, max_num)) # вывод {'max': 20, 'min': 6}
-print(apply_all_func([6, 20, 15, 9], len_str, sum_num, sorted_list))
+print(apply_all_func([6, 20, 15, 9], len_str, sum_num, sorted_list)) # выводим {'len': 4, 'sum': 50, 'sorted': [6, 9, 15, 20]}
 
 
 
