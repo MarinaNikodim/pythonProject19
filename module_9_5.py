@@ -26,30 +26,26 @@ class Iterator:
 
 try:
     iter1 = Iterator(200, 100, 0)
+    for i in iter1:
+        print(i, end='')
+except ValueError as e:
+    print(f'{e}')
+
     iter2 = Iterator(-5, 1)
     iter3 = Iterator(6, 15, 2)
     iter4 = Iterator(5, 1, -1)
     iter5 = Iterator(10, 1)
-    for i in iter1:
-        print(i, end='')
-    print()
+
     for i in iter2:
-        print(i, end='')
+        print(i, end=' ')
     print()
+    iter3 = Iterator(6, 15, 2)
     for i in iter3:
-        print(i, end='')
+        print(i, end=' ')
     print()
     for i in iter4:
-        print(i, end='')
+        print(i, end=' ')
     print()
     for i in iter5:
-        print(i, end='')
+        print(i, end=' ')
     print()
-except ValueError as e:
-    print(f'{e}')
-
-# Вывод на консоль:
-# Шаг указан неверно
-# -5 -4 -3 -2 -1 0 1
-# 6 8 10 12 14
-# 5 4 3 2 1
